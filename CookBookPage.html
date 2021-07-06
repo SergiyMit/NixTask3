@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>CookBook - recipe page </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="    crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Cookbook</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registerLoginPage.html">Login/Register</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="CookBookPage.html">Baking receipes</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <h2>Recipes at our website</h2>
+  <input type="text" class="form-control" id="searchInput" placeholder="Search"></input>
+  <table class="table table-fluid" id ="recipeTable">
+    <thead class="thead-dark">
+      <tr><th>Recipe</th><th>Author</th><th>Cooking time</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Red velvet cake</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>1.5 hours</td>
+        </tr>
+        <tr>
+          <td>Coconut cake</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>3.5 hours</td>
+        </tr>
+        <tr>
+          <td>Chocolate cake</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>2.5 hours</td>
+        </tr>
+        <tr>
+          <td>Jelly bears</td>
+          <td>Anna Johns</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td>Chocolate mousse</td>
+          <td>Ivan ivanov</td>
+          <td>50 minutes</td>
+        </tr>
+        <tr>
+          <td>Home-made ice cream</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>7 hours</td>
+        </tr>
+        <tr>
+          <td>vanilla muffins</td>
+          <td>Petr Petrov</td>
+          <td>45 minutes</td>
+        </tr>
+        <tr>
+          <td>Zombie brain cake</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>7 hours</td>
+        </tr>
+        <tr>
+          <td>Mint cake</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>5.5 hours</td>
+        </tr>
+        <tr>
+          <td>Sugar cookies</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>2.5 hours</td>
+        </tr>
+        <tr>
+          <td>Champagne cake</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>1.5 hours</td>
+        </tr>
+        <tr>
+          <td>Star cookies</td>
+          <td>Sergiy Mitriaiev</td>
+          <td>30 minutes</td>
+        </tr>
+        </tbody>
+        <tfoot class="thead-dark">
+          <tr><th>Recipe</th><th>Author</th><th>Cooking time</th></tr>
+          </thead>
+    </table>
+  </div>
+  <script>
+  $(document).ready(function(){
+    $("#searchInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#recipeTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
+<footer class="footer">
+      <div class="container">
+        <span class="text-muted">@CookBook 2021 Sergiy Mitriaiev</span>
+      </div>
+    </footer>
+    </body>
+</html>

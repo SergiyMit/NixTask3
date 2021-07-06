@@ -1,0 +1,62 @@
+[
+  {
+    "recipe":"Red velvet cake",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"1.5 hours"
+  },
+  {
+    "recipe":"Coconut cake",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"3.5 hours"
+  },
+  {
+    "recipe":"Chocolate cake",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"2.5 hours"
+  },
+  {
+    "recipe":"Jelly bears",
+    "author":"Anna Johns",
+    "cookingTime":"1 hour"
+  },
+  {
+    "recipe":"Chocolate mousse",
+    "author":"Ivan ivanov",
+    "cookingTime":"50 minutes"
+  },
+  {
+    "recipe":"Home-made ice cream",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"7 hours"
+  },
+  {
+    "recipe":"vanilla muffins",
+    "author":"Petr Petrov",
+    "cookingTime":"45 minutes"
+  },
+  {
+    "recipe":"Zombie brain cake",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"7 hours"
+  },
+  {
+    "recipe":"Mint cake",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"5.5 hours"
+  },
+  {
+    "recipe":"Sugar cookies",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"2.5 hours"
+  },
+  {
+    "recipe":"Champagne cake",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"1.5 hours"
+  },
+  {
+    "recipe":"Star cookies",
+    "author":"Sergiy Mitriaiev",
+    "cookingTime":"30 minutes"
+  }
+]
